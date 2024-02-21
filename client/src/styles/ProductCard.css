@@ -1,0 +1,130 @@
+.product-card{
+    min-height: 10rem;
+    display: flex;
+    height: auto;
+    margin: 2rem 0;
+    padding: 1.3rem;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    color: #0195FF;
+}
+.left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+.left>h1{
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #0195FF;
+    padding-bottom: 0.4rem;
+}
+.right > img{
+    height: 180px;
+    margin: auto 0;
+   border-radius: 0.5rem;
+}
+.left > p{
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin: 1rem 0;
+    color: black;
+}
+.left > h5{
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    color: rgb(96, 96, 96);
+}
+
+
+.add-to-cart{
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: #0195ff;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+    margin-right: auto;
+    border: none;
+    padding: 0.8rem 0;
+    border-radius: 0.3rem;
+}
+
+.cart-definers{
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.counter{
+    margin-left: 1rem;
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+.counter p {
+    line-height: 3rem;
+    padding: 0 1rem;
+    color: black;
+}
+.plus,.minus{
+    font-size: 2rem;
+    font-weight: 100;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(191, 191, 191);
+    color: white;
+    line-height: 1.2rem
+}
+
+@media screen  and (max-width : 450px){
+    .product-card{
+        padding: 1rem;
+    }
+    .right img{
+        width: 7rem;
+        height: 7rem;
+        margin: 1.5rem 0 0 0;
+    }
+    .left h1{
+        font-size: medium;
+        font-weight: 200;
+    }
+    .left p{
+        margin: 0.4rem 0;
+        line-height: 1.5rem;
+    }
+    .left h5{
+        font-size: x-small;
+        font-weight: 300;
+    }
+    .cart-definers{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 82vw;
+        margin: 0;
+        align-items: flex-start;
+    }
+    .add-to-cart{
+        width: 100%;
+        font-size: small;
+    }
+    .counter{
+        margin-left: 0rem;
+        font-size: small;
+    }
+    .minus, .plus{
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 1.2rem;
+    }
+}

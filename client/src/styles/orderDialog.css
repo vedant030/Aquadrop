@@ -1,0 +1,15 @@
+.orderDialog{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+.orderDialog h2{
+    width: 100%;
+    text-align: center;
+}
+.check-icon{
+    width: 12%;
+}

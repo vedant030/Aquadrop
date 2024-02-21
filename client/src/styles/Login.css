@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.close-icon{
+    width: 4rem;
+    color: red;
+}
+
+.form-info{
+    width: 90vw;
+    max-width: 640px;
+    background:rgb(245, 245, 245);
+    margin: 0 auto;
+    color: dodgerblue;
+    display: flex;
+    height: 70vh;
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    translate: 50% 0;
+    border-radius: 0.3rem;
+}
+
+.login-left{
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    padding:3rem 1.5rem ;
+    width: 40%;
+    background-color: dodgerblue;
+    color: white;
+    text-align: left;
+}
+
+.login-left h2{
+    margin-bottom: 3rem;
+}
+.login-left p{
+    margin-top: 1rem !important;
+    color: rgb(224, 224, 224);
+    text-align: left;
+}
+.login-left img{
+    margin-top: 5rem;
+    width: 14rem;
+}
+
+.form-info form{
+    width: 60%;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-info form input{
+    display: inline;
+    width: 80%;
+    padding: 10px 10px;
+    margin: 10px auto;
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid dodgerblue;
+    background-color: transparent;
+}
+
+.form-info form input::placeholder{
+    font-size: large;
+}
+.form-info form input:focus{
+    border-bottom: 2px solid grey;
+}
+
+.form-info form a{
+    text-decoration: none;
+    font-size: 22px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.form-info form a:hover{
+    color: dodgerblue;
+}
+.login-btn{
+    width: 80%;
+        padding: 10px 10px;
+        margin: 10px auto;
+        font-size: 18px;
+        outline: 0;
+        border: 0;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 2rem;
+    border: none;
+}
+input[type="button"]:hover{
+    opacity: 0.5;
+}
+.sign-up{
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 0rem;
+    color: black;
+}
+.sign-up a{
+    font-size: 18px;
+    text-decoration: none;
+    color: dodgerblue;
+    margin-left: 3px;
+}
+.sign-up a:hover{
+    color: dodgerblue;
+}
+
+#sign-up{
+    margin-right: 4px;
+}
+
+@media screen and (max-width:450px) {   
+    .form-info{
+        flex-direction: column;
+        height: min-content;
+    }
+    .form-info form{
+        width: 100%;
+        padding: 1rem 0;
+        font-size: small;
+        margin: 0;
+    }
+    .login-left{
+        width: 100%;
+        min-height: 10vh;
+        padding: 0;
+        font-size: small;
+        border-radius: 0;
+        padding: 1rem;
+    }
+    .login-left img{
+        display: none;
+    }
+    .login-btn{
+        font-size: medium;
+    }
+    .form-info form p{
+        font-size: small;
+        margin: 1rem 0;
+    }.form-info form a{
+        font-size: medium;
+        
+    }
+}

@@ -1,0 +1,107 @@
+.shop-page{
+    width: 90vw;
+    max-width: 900px;
+    margin: 3rem auto;
+    min-height: 100vh;
+}
+
+.shop-banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    border-radius: 0.5rem;
+}
+
+.shop-img{
+    width: 28rem;
+    height: 18rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-left: 7rem solid wheat;
+    
+}
+
+.shop-name{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.shop-name h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid white;
+}
+.shop-name p{
+    color: whitesmoke;
+}
+
+.shop-rating{
+    text-align: center;
+    margin: 1rem 0;
+    width: 8rem;
+    border: 1px solid whitesmoke;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0;
+}
+
+.shop-rating p{
+    padding: 0.2rem;
+}
+
+.shop-rating img{
+    height: 1rem;
+    width: 1rem;
+}
+
+
+@media screen and (max-width : 450px) {
+    .shop-banner{
+        padding: 0.6rem;
+        border-radius: 0.1rem;
+    }
+    .shop-page{
+        margin: 1rem;
+    }
+    .shop-img{
+    
+        width: 9rem;
+        height: 9rem;
+        margin: auto;
+        border: none;
+        border-radius: 0.1rem;
+    }
+    .shop-name{
+        font-size: small;
+        padding: 0;
+    }
+    .shop-name h2{
+        font-size: medium;
+        font-weight: 200;
+    }
+    .shop-rating{
+        margin: 0.3rem 0;
+        padding: 0;
+    }
+}
+
+
+/* ==================================ORDER SECTION======================================== */
+.order-section{
+    margin: 2rem 0;
+}
+.order-section>h1{
+    color: rgb(83, 83, 83);
+    font-size: x-large;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid gray;
+}
+
+@media screen and (max-width: 450px){
+    .order-section>h1{
+        font-size: medium;
+        padding-bottom: 1rem;
+    }
+}
